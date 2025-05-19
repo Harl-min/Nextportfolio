@@ -7,15 +7,16 @@ import { sanityClient } from '@lib/sanity';
 
 import { servicesQuery } from '@queries/services';
 
-import LogoCypress from '@root/public/assets/tools/cypress.svg';
+import LogoAngular from '@root/public/assets/tools/angular-icon.svg';
 import LogoFigma from '@root/public/assets/tools/figma.svg';
-import LogoGraphql from '@root/public/assets/tools/graphql.svg';
-import LogoHygraph from '@root/public/assets/tools/hygraph.svg';
+import LogoAWS from '@root/public/assets/tools/aws-2.svg';
+import LogoReactNative from '@root/public/assets/tools/react-native-1.svg';
 import LogoNext from '@root/public/assets/tools/nextjs.svg';
-import LogoSanity from '@root/public/assets/tools/sanity.svg';
-import LogoStorybook from '@root/public/assets/tools/storybook.svg';
-import LogoSvelte from '@root/public/assets/tools/svelte.svg';
+import LogoTailwind from '@root/public/assets/tools/tailwindcss.svg';
+import LogoIonic from '@root/public/assets/tools/ionic-1.svg';
+import LogoPostman from '@root/public/assets/tools/postman.svg';
 import LogoVercel from '@root/public/assets/tools/vercel.svg';
+
 import type { Service as ServiceType } from '@types';
 
 const getData = async () => {
@@ -51,22 +52,41 @@ const HomePage = async () => {
 			<HeroSection />
 			<section id="tools" className="my-40">
 				<Container>
-					<h2 className="headline mt-24 text-center text-xl md:text-2xl lg:text-3xl">
-						Some of my favourite tools
-					</h2>
+  <h2 className="headline mt-24 text-center text-xl md:text-2xl lg:text-3xl">
+    Some of my favourite tools
+  </h2>
 
-					<div className="mx-auto mt-8 flex max-w-5xl flex-wrap items-center justify-center gap-x-16 gap-y-8">
-						<LogoNext className="w-32" aria-label="Next.js" />
-						<LogoSvelte className="w-12" aria-label="SvelteKit" />
-						<LogoHygraph className="w-28 md:w-36" aria-label="Hygraph" />
-						<LogoSanity className="w-32 md:w-40" aria-label="Sanity" />
-						<LogoStorybook className="w-32 md:w-40" aria-label="Storybook" />
-						<LogoGraphql className="w-28 md:w-36" aria-label="GraphQL" />
-						<LogoVercel className="w-32 md:w-36" aria-label="Vercel" />
-						<LogoFigma className="w-8" aria-label="Figma" />
-						<LogoCypress className="w-32 md:w-40" aria-label="Cypress" />
-					</div>
-				</Container>
+  <div className="mx-auto mt-8 flex max-w-5xl flex-wrap items-center justify-center gap-6">
+    <div className="h-16 w-32 flex items-center justify-center">
+      <LogoAngular className="h-full object-contain" aria-label="Cypress" />
+    </div>
+    <div className="h-16 w-32 flex items-center justify-center">
+      <LogoNext className="h-full object-contain" aria-label="Next.js" />
+    </div>
+    <div className="h-16 w-32 flex items-center justify-center">
+      <LogoPostman className="h-full object-contain" aria-label="SvelteKit" />
+    </div>
+    <div className="h-16 w-32 flex items-center justify-center">
+      <LogoReactNative className="h-full object-contain" aria-label="Hygraph" />
+    </div>
+    <div className="h-16 w-32 flex items-center justify-center">
+      <LogoIonic className="h-full object-contain" aria-label="Sanity" />
+    </div>
+    <div className="h-16 w-32 flex items-center justify-center">
+      <LogoTailwind className="h-full object-contain" aria-label="Storybook" />
+    </div>
+    <div className="h-16 w-32 flex items-center justify-center">
+      <LogoAWS className="h-full object-contain" aria-label="GraphQL" />
+    </div>
+    <div className="h-16 w-32 flex items-center justify-center">
+      <LogoVercel className="h-full object-contain" aria-label="Vercel" />
+    </div>
+    <div className="h-16 w-32 flex items-center justify-center">
+      <LogoFigma className="h-full object-contain" aria-label="Figma" />
+    </div>
+  </div>
+</Container>
+
 			</section>
 			<section id="services">
 				<Container>

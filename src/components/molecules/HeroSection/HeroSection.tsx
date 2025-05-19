@@ -6,32 +6,30 @@ import Link from 'next/link';
 export const HeroSection = () => {
 	const talkAbout = [
 		'React',
-		'JavaScript',
 		'TypeScript',
-		'GraphQL',
+		'Angular',
 		'Redux',
-		'Jamstack',
+		'Ionic',
 		'Next.js',
 		'RESTful APIs',
 		'HTML',
 		'CSS',
-		'Gatsby',
-		'Svelte',
+		'AWS',
 	];
 
 	return (
-		<section id="hero" className="relative isolate overflow-hidden pt-14">
+		<section id="hero" className="relative isolate overflow-hidden pt-9">
 			<div className="bg-gradient-from-t absolute inset-x-0 bottom-0 -z-10 h-24 from-off-white dark:from-slate-950 sm:h-32" />
 			<div
 				className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] dark:shadow-slate-700 sm:-mr-80 lg:-mr-96 lg:shadow-xl"
 				aria-hidden="true"
 			/>
-			<div className="mx-auto max-w-7xl px-6 lg:px-8 lg:py-32">
-				<div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+			<div className="flex justify-between gap-5 px-5 xl:px-10">
+				<div className="flex-col mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+					<div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
 					<h1 className="headline max-w-2xl text-4xl font-bold tracking-tight sm:text-6xl lg:col-span-2 xl:col-auto">
 						Hey, I&apos;m Al-Ameen Ashimi
 					</h1>
-					<div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
 						<p className="text-lg leading-8 text-slate-600 dark:text-off-white">
 							I am a passionate Software Engineer, specialised in front-end
 							development using React and TypeScript. As an advocate for web
@@ -39,20 +37,9 @@ export const HeroSection = () => {
 							I create amazing web applications to make the internet a better
 							place.
 							<br />
-							You can talk to me about <TypeWriter strings={talkAbout} />.
-						</p>
-						<p className="text-lg leading-8 text-slate-600 dark:text-off-white">
-							P.S. this website is open-source and available on{' '}
-							<a
-								href="https://github.com/jakeherp/portfolio"
-								title="Link to Github repository"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="underlined relative border-b-2 border-grey-300 font-bold hover:border-b-0 dark:border-grey-700"
-							>
-								Github
-							</a>
-							.
+							You can talk to me about <span className='text-blue-700 dark:text-blue-500 font-extrabold'>
+								<TypeWriter strings={talkAbout} />.
+								</span>	
 						</p>
 						<div className="mt-10 flex items-center gap-x-6">
 							<Link
@@ -69,15 +56,17 @@ export const HeroSection = () => {
 							</Link>
 						</div>
 					</div>
+					</div>
+					<div className="portfolio-image">
 					<Image
-						src="/assets/jacob.jpg"
+						src="/assets/al-ameen.jpg"
 						alt="Photo of Al-Ameen Ashimi"
 						height={300}
 						width={450}
 						loading="eager"
-						className="mt-10 aspect-[6/5] max-w-full rounded-2xl object-cover sm:mt-16 lg:ml-20 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+						className="mt-10 aspect-[6/5] max-w-full rounded-l object-cover sm:mt-16 lg:ml-20 lg:mt-0 lg:max-w-none xl:row-span-2 xl:mt-0"
 					/>
-				</div>
+					</div>
 			</div>
 			<div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-off-white dark:from-slate-950 sm:h-32" />
 		</section>

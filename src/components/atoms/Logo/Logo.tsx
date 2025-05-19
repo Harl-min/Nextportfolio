@@ -1,6 +1,6 @@
 'use client';
 
-import Jacob from './jacob-herper.png';
+import Jacob from './al-ameen.jpg';
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -28,11 +28,12 @@ const Logo = ({ hideName }: LogoProps) => {
 				/>
 				{!hideName && (
 					<>
-						<span className="opacity-100 transition duration-300 group-hover:opacity-0">
-							@jakeherp
-						</span>
+						<p className="flex flex-col text-sm opacity-100 transition duration-300 group-hover:opacity-0">
+							<span>Al-Ameen</span>
+							<span>Software Engineer</span>
+						</p>
 						<span className="absolute left-16 from-blue-400 to-blue-700 opacity-0 transition duration-300 group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:text-transparent group-hover:opacity-100">
-							Al-Ameen Ashimi
+							@Al-Ameen Ashimi
 						</span>
 					</>
 				)}

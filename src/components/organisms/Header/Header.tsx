@@ -15,21 +15,21 @@ import Headroom from 'react-headroom';
 
 export const navItems = [
 	{
+		href: '/',
+		title: 'Home',
+	},
+	{
 		href: '/about',
 		title: 'About',
 	},
 	{
-		href: '/uses',
-		title: 'Uses',
-	},
-	{
 		href: '/case-studies',
-		title: 'Case Studies',
+		title: 'Projects',
 	},
-	{
-		href: '/blog',
-		title: 'Blog',
-	},
+	// {
+	// 	href: '/blog',
+	// 	title: 'Blog',
+	// },
 	{
 		href: '/contact',
 		title: 'Contact',
