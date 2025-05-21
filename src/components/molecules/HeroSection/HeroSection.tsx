@@ -31,11 +31,10 @@ export const HeroSection = () => {
 						Hey, I&apos;m Al-Ameen Ashimi
 					</h1>
 						<p className="text-lg leading-8 text-slate-600 dark:text-off-white">
-							I am a passionate Software Engineer, specialised in front-end
-							development using React and TypeScript. As an advocate for web
-							performance and accessibility and an evangelist for the Jamstack,
-							I create amazing web applications to make the internet a better
-							place.
+							I am a passionate Software Engineer, experience in native, hybrid, and cross-platform 
+							app development. Skilled in Android and web architectures, 
+							with a strong grasp of UI/UX principles. Proficient in modern tools and technologies like NextJs, 
+							React Native, Angular, Wordpress, and JavaScript, with a focus on delivering efficient and reliable solutions.
 							<br />
 							You can talk to me about <span className='text-blue-700 dark:text-blue-500 font-extrabold'>
 								<TypeWriter strings={talkAbout} />.

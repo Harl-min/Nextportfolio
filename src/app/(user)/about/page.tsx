@@ -17,7 +17,7 @@ import Link from 'next/link';
 
 export const metadata = {
 	title:
-		'About Al-Ameen Ashimi, a Lead Software Engineer and Consultant in the UK',
+		'About Al-Ameen Ashimi, a Lead Software Engineer and Consultant in Nigeria',
 	description:
 		'As a passionate front-end software developer, I create amazing websites and web apps to make the internet a better place.',
 };
@@ -40,11 +40,11 @@ const AboutPage = async () => {
 	return (
 		<AnimatePage>
 			<Container>
-				<h1 className="headline mt-8 text-3xl md:text-5xl lg:text-6xl">
+				<h1 className="headline mt-8 text-2xl md:text-5xl lg:text-6xl">
 					Hey, I&apos;m Al-Ameen Ashimi
 				</h1>
 				<h2 className="mt-2 text-xl font-bold md:text-2xl">
-					Lead Software Engineer from the UK
+					Lead Software Engineer from Nigeria
 				</h2>
 				<p className="mt-8">
 					As a passionate front-end developer, I create amazing websites and web
@@ -53,10 +53,10 @@ const AboutPage = async () => {
 					experience in serverless technologies.
 				</p>
 				<p className="my-4">
-					I am &radic;1,024 years old and have been a web developer for as long
+					I am 24 years old and have been a web developer for as long
 					as I can think. The technologies I work with are JavaScript, HTML and
-					CSS with a focus on the frameworks React.js, Gatsby, Next.js, Node and
-					Express. I use code not only to do my day-to-day job, but also to
+					CSS with a focus on the frameworks React.js, Angular, Next.js, Ionic, React Native, Node and
+					Tailwind. I use code not only to do my day-to-day job, but also to
 					solve everyday problems I come across.
 				</p>
 				<p>
@@ -109,7 +109,7 @@ const AboutPage = async () => {
 
 					<div className="mt-8 flex items-baseline justify-start gap-6">
 						<Button
-							href="/cv-2024.pdf"
+							href="/AL-AMEEN_ASHIMI_Resume.pdf"
 							className="group flex gap-2 whitespace-nowrap"
 							download
 						>
