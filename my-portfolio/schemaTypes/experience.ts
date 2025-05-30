@@ -9,5 +9,17 @@ export const experience = defineType({
       name: 'name',
       type: 'string',
     }),
+    defineField({
+      name: 'company',
+      type: 'string',
+    }),
+    defineField({
+      name: 'startDate',
+      type: 'datetime',
+    }),
+    defineField({
+      name: 'image',
+      type: 'image',
+    })
   ],
 })
