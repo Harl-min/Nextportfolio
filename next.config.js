@@ -2,9 +2,9 @@ const { withSentryConfig } = require('@sentry/nextjs');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	experimental: {
-		appDir: true,
-	},
+	// experimental: {
+	// 	appDir: true,
+	// },
 	poweredByHeader: false,
 	swcMinify: true,
 	productionBrowserSourceMaps: process.env.NODE_ENV === 'production',
@@ -18,6 +18,10 @@ const nextConfig = {
 	},
 	images: {
 		domains: ['dev-to-uploads.s3.amazonaws.com', 'cdn.sanity.io'],
+		remotePatterns: [
+      { protocol: "https", hostname: "cdn.sanity.io" },
+      { protocol: "https", hostname: "placehold.co" },
+    ],
 	},
 	publicRuntimeConfig: {
 		sanityProjectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
